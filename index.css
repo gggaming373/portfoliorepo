@@ -1,18 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --main-bg-color: white;
+    --main-color: black;
+    --aestetic-color: red;
+  }
+  
+
 body{
-    background-color: white;
+    background-color: var(--main-bg-color);
 
     
 }
-p{
+#baslik{
+    width:max-content;
+    text-align: center;
+    margin: auto;
     margin-top: 0px;
-    color: black;
+    color: var(--main-color);
+    font-size: 200px;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    transition: ease-in-out 0.5s;
+    -webkit-text-stroke: 4px var(--main-bg-color);
+}
+
+
+#baslik:hover{
+    color: var(--main-bg-color);
+    -webkit-text-stroke: 4px var(--main-color);
+}
+#altbaslik{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+.hidden{
+    filter:blur(10px);
+    opacity: 0;
+    color: var(--aestetic-color);
+    transition: ease-in-out 0.75s;
+}
+
+.show{
+    color: var(--main-color);
+    filter:blur(0px);
+    opacity: 1;
+}
+#lightswitch{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    border: none;
+    display: block;
+    position: fixed;
+    
+    transition: ease-in-out 0.25s;
+}
+#lightswitch:hover{
+    cursor: pointer;
+    opacity: 80%;
+    border-radius: 10px;
+}
+section{
+    margin-bottom: 0px;
+}
+#ortabaslik{
+    margin-bottom: 0px;
+    margin-top: 30px;
     font-size: 100px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-iframe{
+#altortabaslik{
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#colors{
+   
+margin: auto;
+
+display: block;
+    text-align: center;
+    width: 100px;
+    height: 75px;
+}
+#coloredbutton{
     margin-top: 10px;
-    height: 500px;
-    width: 500px;
-    background-color: black;
+    background-color: var(--aestetic-color);
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-inline: auto;
+    display: block;
+    color: var(--main-color);
 }
+#coloredbutton:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+.links {
+    position: fixed;
+    font-size: 40px;
+    width: max-content;
+    right: 0%;
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: var(--aestetic-color);
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+}
+.links :hover{
+    color: var(--aestetic-color);
+
+}
+
+
+    
+
+
+.links a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+
