@@ -102,7 +102,24 @@ display: block;
     color: var(--main-color);
 }
 #coloredbutton:hover{
-    opacity: 80%;
+    opacity: 60%;
+    cursor: pointer;
+}
+#coloredhref{
+    margin-top: 10px;
+    background-color: var(--aestetic-color);
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    width: min-content;
+    text-align: center;
+    margin-inline: auto;
+    display: block;
+    color: var(--main-color);
+}
+#coloredhref:hover{
+    opacity: 60%;
     cursor: pointer;
 }
 .links {
@@ -132,4 +149,7 @@ display: block;
     color: var(--main-bg-color);
 }
 
+#fiverrtext{
+    letter-spacing: -3px;
+}
 
