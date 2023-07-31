@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@300;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono:wght@700&family=Victor+Mono:wght@100&display=swap');
 :root {
     --main-bg-color: white;
     --main-color: black;
     --aestetic-color: red;
+    font-family: 'Space Mono', monospace;
   }
   
 
@@ -13,13 +14,14 @@ body{
     
 }
 #baslik{
+    letter-spacing: -4px;
+    font-family: 'Space Mono', monospace;
     width:max-content;
     text-align: center;
     margin: auto;
     margin-top: 0px;
     color: var(--main-color);
-    font-size: 200px;
-    font-family: 'Lilita One', cursive;
+    font-size: 150px;
     text-align: center;
     transition: ease-in-out 0.5s;
     -webkit-text-stroke: 4px var(--main-bg-color);
@@ -31,8 +33,8 @@ body{
     -webkit-text-stroke: 4px var(--main-color);
 }
 #altbaslik{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-family: 'Victor Mono', monospace;
     text-align: center;
     
 }
@@ -49,6 +51,9 @@ body{
     opacity: 1;
 }
 #lightswitch{
+    top: 10px;
+    left: 10px;
+    z-index: 999;
     width: 60px;
     height: 60px;
     font-size: 40px;
@@ -71,13 +76,13 @@ section{
 #ortabaslik{
     margin-bottom: 0px;
     margin-top: 30px;
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-family: 'Space Mono', monospace;
     text-align: center;
 }
 #altortabaslik{
-    font-size: 70px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-family: 'Space Mono', monospace;
     text-align: center;
 }
 #colors{
@@ -90,6 +95,8 @@ display: block;
     height: 75px;
 }
 #coloredbutton{
+    transition: 0.2s ease-in-out;
+    font-family: 'Space Mono', monospace;
     margin-top: 10px;
     background-color: var(--aestetic-color);
     border: none;
@@ -106,6 +113,7 @@ display: block;
     cursor: pointer;
 }
 #coloredhref{
+    transition: 0.2s ease-in-out;
     margin-top: 10px;
     background-color: var(--aestetic-color);
     border: none;
@@ -117,6 +125,7 @@ display: block;
     margin-inline: auto;
     display: block;
     color: var(--main-color);
+    text-decoration: none;
 }
 #coloredhref:hover{
     opacity: 60%;
@@ -124,9 +133,11 @@ display: block;
 }
 .links {
     position: fixed;
-    font-size: 40px;
+    font-size: 35px;
     width: max-content;
-    right: 0%;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
     background-color: var(--main-color);
     text-decoration: none;
     color: var(--aestetic-color);
@@ -134,6 +145,7 @@ display: block;
     border-radius: 10px;
     padding:10px;
 }
+
 .links :hover{
     color: var(--aestetic-color);
 
@@ -150,6 +162,7 @@ display: block;
 }
 
 #fiverrtext{
-    letter-spacing: -3px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -4px;
 }
 
