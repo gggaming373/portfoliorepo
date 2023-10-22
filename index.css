@@ -51,7 +51,7 @@ body{
     opacity: 1;
 }
 #lightswitch{
-    top: 10px;
+    top: 20px;
     left: 10px;
     z-index: 999;
     width: 60px;
@@ -135,7 +135,7 @@ display: block;
     position: fixed;
     font-size: 35px;
     width: max-content;
-    top: 10px;
+    top: 20px;
     right: 10px;
     z-index: 999;
     background-color: var(--main-color);
@@ -166,3 +166,59 @@ display: block;
     letter-spacing: -4px;
 }
 
+.topbar{
+    border-radius: 10px;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 20px;
+}
+.topbar *{
+    transition: 0.2s ease-in-out;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    background-color: var(--main-bg-color);
+    color: var(--aestetic-color);
+    text-align: center;
+}
+.topbar *:hover{
+    opacity: 60%;
+    cursor:pointer;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    text-align: center;
+}
+
+.about-text {
+    flex: 1; /* Grow to take available space */
+    text-align: left; /* Left-align the text */
+}
+
+.about-image {
+    flex: 1; /* Grow to take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Additional CSS styles for the image */
+#logoimg {
+    box-shadow: 0px  0px 30px 10px var(--main-color);
+    transition: 0.5s;
+    border-radius: 1000px;
+    width: 300px;
+    height: 300px;
+}
+#logoimg:hover{
+    box-shadow: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+}

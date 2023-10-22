@@ -33,3 +33,8 @@ var colorPicker = document.querySelector('#colors')
 function colorit(){
     root.style.setProperty('--aestetic-color', colorPicker.value);
 }
+
+abouttext = document.getElementsByClassName('abouttext')[0];
+function about(){
+    abouttext.scrollIntoView();
+}
