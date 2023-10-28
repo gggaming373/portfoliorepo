@@ -38,3 +38,15 @@ abouttext = document.getElementsByClassName('abouttext')[0];
 function about(){
     abouttext.scrollIntoView();
 }
+skillstext = document.getElementsByClassName('skills')[0];
+function skills(){
+    skillstext.scrollIntoView();
+}
+function home(){
+    window.scrollTo(0, 0);
+}
+
+myprojectstext = document.getElementsByClassName('myprojects')[0];
+function myprojects(){
+    myprojectstext.scrollIntoView();
+}

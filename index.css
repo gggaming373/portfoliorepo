@@ -222,3 +222,18 @@ display: block;
     width: 500px;
     height: 500px;
 }
+#projectsimg{
+    
+    width: 200px;
+    height: 200px;
+}
+
+.rowedprojects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equally-sized columns */
+    /* Add some gap between items */
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Victor Mono', monospace;
+    
+}
