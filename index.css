@@ -13,6 +13,27 @@ body{
 
     
 }
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    transition: 0.2s ease-in-out;
+    background: var(--main-color);
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--aestetic-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: var(--main-color);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
 #baslik{
     letter-spacing: -4px;
     font-family: 'Space Mono', monospace;
